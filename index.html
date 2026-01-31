@@ -34,3 +34,35 @@
 </head>
 <body>
 <h1>Will you be my Valentine? 💌</h1>
+<button id="yes">Yes</button>
+<button id="no">No</button>
+
+<p id="response" style="font-size: 20px; margin-top: 30px;"></p>
+
+<script>
+    const yesButton = document.getElementById("yes");
+    const noButton = document.getElementById("no");
+    const response = document.getElementById("response");
+
+    let yesSize = 50; // initial font size
+    let noSize = 50;  // initial font size
+
+    yesButton.addEventListener("click", function() {
+        response.textContent = "Yay! 💖 I’m so happy!";
+    });
+
+    noButton.addEventListener("click", function() {
+        // increase Yes button
+        yesSize += 10;
+        yesButton.style.fontSize = yesSize + "px";
+
+        // decrease No button
+        noSize -= 5;
+        if (noSize < 10) noSize = 10; // prevent it from disappearing
+        noButton.style.fontSize = noSize + "px";
+
+        response.textContent = "Oh no 😢 The Yes button is getting bigger!";
+    });
+</script>
+</body>
+</html>
