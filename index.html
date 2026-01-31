@@ -16,7 +16,7 @@
         button {
             padding: 15px 30px;
             margin: 20px;
-            font-size: 18px;
+            font-size: 50px; /* initial font size */
             border: none;
             border-radius: 10px;
             cursor: pointer;
@@ -34,33 +34,3 @@
 </head>
 <body>
 <h1>Will you be my Valentine? 💌</h1>
-<button id="yes">Yes</button>
-<button id="no">No</button>
-
-<p id="response" style="font-size: 20px; margin-top: 30px;"></p>
-
-<script>
-    const yesButton = document.getElementById("yes");
-    const noButton = document.getElementById("no");
-    const response = document.getElementById("response");
-    let yesSize = 30; // initial font size in px
-    let noSize = 30; // initial font size in px
-
-
-    yesButton.style.fontSize = "50px";
-    noButton.style.fontSize = "50px";
-
-    yesButton.addEventListener("click", function() {
-        response.textContent = "Yay! 💖 I’m so happy!";
-    });
-
-    noButton.addEventListener("click", function() {
-        yesSize += 30; // increase Yes button size
-        noSize -= 30;
-        yesButton.style.fontSize = yesSize + "px";
-        noButton.style.fontSize = noSize + "px";
-        response.textContent = "Oh no 😢 The Yes button is getting bigger!";
-    });
-</script>
-</body>
-</html>
