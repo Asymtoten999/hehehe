@@ -2,103 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>GIF Chaos 💖</title>
+
     <style>
         body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
             background-color: #ffe6f0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 10px; /* space between GIFs */
-        }
-        img {
-            width: 130px;   /* small GIFs */
-            height: 130px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.2s;
+            overflow: hidden;
+            position: relative;
         }
 
+        .gif {
+            position: absolute;
+            width: 170px;   /* bigger than before */
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     </style>
 </head>
+
 <body>
 
-<!-- Repeat 30 times -->
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.giff" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5">
+<script>
+    const gifs = [
+        "https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif",
+        "https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif",
+        "https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif",
+        "https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif",
+        "https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif",
+        "https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif"
+    ];
 
-<img src="https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
-<img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 5"><img src="https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif" alt="GIF 1">
-<img src="https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif" alt="GIF 2">
-<img src="https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif" alt="GIF 3">
-<img src="https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif" alt="GIF 4">
+    const TOTAL_GIFS = 36; // change this if you want more/less
+    const size = 170;
 
+    for (let i = 0; i < TOTAL_GIFS; i++) {
+        const img = document.createElement("img");
+        img.src = gifs[i % gifs.length]; // ensures equal-ish distribution
+        img.className = "gif";
+
+        const maxX = window.innerWidth - size;
+        const maxY = window.innerHeight - size;
+
+        // random position with slight overlap allowed
+        img.style.left = Math.random() * (maxX + 40) - 20 + "px";
+        img.style.top  = Math.random() * (maxY + 40) - 20 + "px";
+
+        // random stacking so overlap feels natural
+        img.style.zIndex = Math.floor(Math.random() * 5);
+
+        document.body.appendChild(img);
+    }
+</script>
 
 </body>
 </html>
