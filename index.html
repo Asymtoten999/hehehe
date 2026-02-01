@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Valentine Question 💖</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,8 +39,26 @@
 <p id="response" style="font-size: 20px; margin-top: 30px;"></p>
 
 <script>
+    function showRandomGif() {
+    const gif = document.createElement("img");
+    gif.src = "https://media.giphy.com/media/l0HlQ7LRalK9zR0Xe/giphy.gif"; // replace if you want
+    gif.style.position = "absolute";
+    gif.style.width = "120px";
+
+    const maxX = window.innerWidth - 120;
+    const maxY = window.innerHeight - 120;
+
+    gif.style.left = Math.random() * maxX + "px";
+    gif.style.top = Math.random() * maxY + "px";
+
+    document.body.appendChild(gif);
+}
+
+
+
     const yesButton = document.getElementById("yes");
     const noButton = document.getElementById("no");
+
     const response = document.getElementById("response");
 
     let yesSize = 50; // initial font size
@@ -61,7 +78,8 @@
         if (noSize < 10) noSize = 10; // prevent it from disappearing
         noButton.style.fontSize = noSize + "px";
 
-        response.textContent = "Oh no 😢 The Yes button is getting bigger!";
+        showRandomGif();
+
     });
 </script>
 </body>
