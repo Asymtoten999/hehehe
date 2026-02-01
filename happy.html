@@ -1,34 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIF Chaos 💖</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffe6f0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gif {
+            position: absolute;
+            width: 170px;   /* bigger than before */
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
 <script>
-    const gifs = [
-        "https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif",
-        "https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif",
-        "https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif",
-        "https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif",
-        "https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif",
-        "https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif"
-    ];
+    <script>
+const gifs = [
+    "https://media1.tenor.com/m/5Z4axR25BF0AAAAd/pibble.gif",
+    "https://media1.tenor.com/m/b4ulnyh3l7QAAAAC/dog.gif",
+    "https://media.tenor.com/JmLoTbDYRfcAAAAi/gog-the-alien-gog.gif",
+    "https://media1.tenor.com/m/Zid28W5261QAAAAC/aww-pibble.gif",
+    "https://media1.tenor.com/m/6yLCYjW-7_wAAAAC/pibble-frenchie.gif",
+    "https://media1.tenor.com/m/BkyDLAM15-kAAAAd/pibble-pibble-meme.gif"
+];
 
-    const size = 170;              // GIF size
-    const overlap = 40;            // allow overlap
-    const density = 1.2;           // >1 = extra coverage
+const size = 170;              // GIF size
+const overlap = 40;            // allow overlap
+const density = 1.2;           // >1 = extra coverage
 
-    const cols = Math.ceil(window.innerWidth / (size - overlap));
-    const rows = Math.ceil(window.innerHeight / (size - overlap));
-    const total = Math.ceil(cols * rows * density);
+const cols = Math.ceil(window.innerWidth / (size - overlap));
+const rows = Math.ceil(window.innerHeight / (size - overlap));
+const total = Math.ceil(cols * rows * density);
 
-    for (let i = 0; i < total; i++) {
-        const img = document.createElement("img");
-        img.src = gifs[i % gifs.length];
-        img.className = "gif";
+for (let i = 0; i < total; i++) {
+    const img = document.createElement("img");
+    img.src = gifs[i % gifs.length];
+    img.className = "gif";
 
-        img.style.left =
-            Math.random() * (window.innerWidth - size + overlap) - overlap / 2 + "px";
+    img.style.left =
+        Math.random() * (window.innerWidth - size + overlap) - overlap / 2 + "px";
 
-        img.style.top =
-            Math.random() * (window.innerHeight - size + overlap) - overlap / 2 + "px";
+    img.style.top =
+        Math.random() * (window.innerHeight - size + overlap) - overlap / 2 + "px";
 
-        img.style.zIndex = Math.floor(Math.random() * 10);
+    img.style.zIndex = Math.floor(Math.random() * 10);
 
-        document.body.appendChild(img);
-    }
+    document.body.appendChild(img);
+}
 </script>
+
+</script>
+
+</body>
+</html>
